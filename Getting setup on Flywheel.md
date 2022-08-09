@@ -26,7 +26,10 @@ The command line interface is the preferred  option, particularly when handling 
 https://docs.flywheel.io/hc/en-us/articles/360008162214-Installing-the-Flywheel-Command-Line-Interface-CLI- 
 
 *Step 1:  Download*  
-In the upper-right corner, select your account menu, and select Profile. Here there will be the option to download the CLI for your system. If on a Mac Flywheel will need to be added as a security exception in system preferences. *If on a brand new mac it may be necessary to start in safemode and allow system modifications under security options.    
+In the upper-right corner, select your account menu, and select Profile. Here there will be the option to download the CLI for your system. 
+<img width="1614" alt="Screenshot 2022-08-09 at 17 29 24" src="https://user-images.githubusercontent.com/22872947/183707028-cc3e8d46-39ff-436f-a096-a4f32448e1a5.png">
+If on a Mac Flywheel will need to be added as a security exception in system preferences before you can open. *If on a mac pro (M1 max chip) it may be necessary to start in safemode and allow user managment of system terminal extensions under security options.   
+
 *Step 2: Generate an API key*  
 Also under Flywheel Profile tab (Do not share)  
 *Step 3: Navigate to the fw.exe or fw app*  
