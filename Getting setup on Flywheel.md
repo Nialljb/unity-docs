@@ -34,7 +34,10 @@ If on a Mac Flywheel will need to be added as a security exception in system pre
 Also under Flywheel Profile tab (Do not share)    
 
 *Step 3: Navigate to the fw.exe or fw app*  
-Move to somewhere it can be run from. Ideally on your system path.    
+Move to somewhere it can be run from. Ideally on your system path.  
+
+> sudo cp ~/Downloads/darwin_amd64/fw /usr/local/bin/
+
 
 *Step 4: Log in from the CLI*     
 Should be possible to login via the command line with the site adress and your API     
