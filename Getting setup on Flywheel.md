@@ -31,12 +31,14 @@ In the upper-right corner, select your account menu, and select Profile. Here th
 If on a Mac Flywheel will need to be added as a security exception in system preferences before you can open. *If on a mac pro (M1 max chip) it may be necessary to start in safemode and allow user managment of system terminal extensions under security options.   
 
 *Step 2: Generate an API key*  
-Also under Flywheel Profile tab (Do not share)  
+Also under Flywheel Profile tab (Do not share)    
+
 *Step 3: Navigate to the fw.exe or fw app*  
-Move to somewhere it can be run from. Ideally on your system path.  
-*Step 4: Log in from the CLI*   
-Should be possible to login via the command line with the site adress and your API   
-> fw login [url].flywheel.io:[PERSONAL_API_KEY(DO NOT SHARE)]   
+Move to somewhere it can be run from. Ideally on your system path.    
+
+*Step 4: Log in from the CLI*     
+Should be possible to login via the command line with the site adress and your API     
+> fw login [url].flywheel.io:[PERSONAL_API_KEY(DO NOT SHARE)]     
 
 <p>&nbsp;</p>
 
