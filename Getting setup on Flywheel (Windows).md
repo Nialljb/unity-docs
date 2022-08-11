@@ -50,7 +50,7 @@ If successful you will get a notification that you are logged in. To run you nee
 <p>&nbsp;</p>
 
 ### Sending local data to Flywheel via the CLI
-This is an example of the folder hierarchy of data as it comes from the Hyperfine scanner (note: acquisition names will vary). The user provides the subject ID at the scanner. This should not contain any special characters and should contain leading 0s. 
+This is an example of the folder hierarchy of data as it comes from the Hyperfine scanner (note: acquisition names will vary). The user provides the subject ID at the scanner. This should not contain any special characters and should contain leading 0s. (see for more information: https://github.com/Nialljb/unity-docs/blob/main/UNITY-data-naming-SOP.md)
 
 for exmaple:
 - BETA001  
