@@ -67,9 +67,9 @@ https://drive.google.com/file/d/1sgyrTc3dsKm4cGlo-WDDhVz7EbaTxE2g/view?usp=shari
 
 
 ### On the command line
-First you need to open terminal and navigate to where the data is stored, then;
-Connect/login to the CLI (command line interface) and finally;  
-Run the import command pointing to the folder where the data is
+First you need to open terminal and navigate to where the data is stored, then;  
+Connect/login to the CLI (command line interface) and finally;    
+Run the import command pointing to the folder where the data is  
 
 <img width="795" alt="Screenshot 2022-08-11 at 10 42 17" src="https://user-images.githubusercontent.com/22872947/184106904-70eb323f-b6af-4546-b03a-74c0066711af.png">
 
@@ -79,7 +79,9 @@ ls = list contents of current directory. Here we are in Downloads and there is o
 
 fw login bmgf.flywheel.io.xxxxxxx = Flywheel login command we have set up. This contains the users unique key at the end which should not be shared. When this is run succesfully it will return a line saying you are logged in.   
 
-fw ingest dicom --detect-duplicates fw_example dev "example" = This line sends the data inside the folder fw_example to the project example in the group dev on the Flywheel platform. For sending real data dev needs to be replaced by *global_map* and "example" needs to be replaced by *your project name* 
+fw ingest dicom --detect-duplicates fw_example dev "example" = This line sends the data inside the folder fw_example to the project example in the group dev on the Flywheel platform. For sending real data dev needs to be replaced by *global_map* and "example" needs to be replaced by *your project name*  
+
+After this command is run some output will be generated in the terminal. A review of the expected folder structure will be provided with the number of subjects and sessions. Have a look at this to check if it is what is expected. If so respond by typing "yes" to the prompt. The data will start uploading to the Flywheel platform.  
 
 The data will be uploaded to the Flywheel platform under the project and group specified(here group = dev, project = example). Opening up the Flywheel web browser we can see the subject and scans that have been uploaded. The subject label and time stamp are given on the left hand side and the list of scans are given on the right. In this example the dicom files from the scanner have automatically been converted to NIFTI the analysing file format. Going forward additional functionality will be added to curate and analyse the data on this platform as new data is added. 
 <img width="1635" alt="image" src="https://user-images.githubusercontent.com/22872947/184101337-3c501dda-9798-46ed-9c3b-be299c3f29ec.png">
