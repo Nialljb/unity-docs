@@ -85,7 +85,7 @@ Run the import command pointing to the folder where the data is
 After this command is run some output will be generated in the terminal. A review of the expected folder structure will be provided with the number of subjects and sessions. Have a look at this to check if it is what is expected. If so respond by typing "yes" to the prompt. The data will start uploading to the Flywheel platform.  
 
 The data will be uploaded to the Flywheel platform under the project and group specified(here group = dev, project = example). Opening up the Flywheel web browser we can see the subject and scans that have been uploaded. The subject label and time stamp are given on the left hand side and the list of scans are given on the right. In this example the dicom files from the scanner have automatically been converted to NIFTI the analysing file format. Going forward additional functionality will be added to curate and analyse the data on this platform as new data is added. 
-<img width="1635" alt="image" src="https://user-images.githubusercontent.com/22872947/184101337-3c501dda-9798-46ed-9c3b-be299c3f29ec.png">
+<img width="31" alt="image" src="https://user-images.githubusercontent.com/22872947/184119295-923a8c92-4e2a-4db2-8b50-a99f52505a18.png">
 
 <p>&nbsp;</p>
 
