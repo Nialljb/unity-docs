@@ -1,4 +1,4 @@
-# Getting setup on Flywheel (Mac)
+# Getting setup on Flywheel (Windows)
 v1.0 ~ August 2022  
 
 ## Web login
