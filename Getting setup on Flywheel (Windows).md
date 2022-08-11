@@ -67,23 +67,16 @@ Example data can be downloaded from here:
 https://drive.google.com/file/d/1sgyrTc3dsKm4cGlo-WDDhVz7EbaTxE2g/view?usp=sharing
 
 
-<img width="1356" alt="image" src="https://user-images.githubusercontent.com/22872947/184101565-8feb13fe-0990-4fe8-b357-89f219e03630.png">
-
-![image](https://user-images.githubusercontent.com/22872947/184113361-59994499-c12b-4275-a2bc-183aac2dab18.png)
+![image](https://user-images.githubusercontent.com/22872947/184114225-8f1b4b3e-6243-429f-abf6-e146861a74b9.png)
 
 ### On the command line
 First you need to open terminal and navigate to where the data is stored, then;  
 Connect/login to the CLI (command line interface) and finally;    
 Run the import command pointing to the folder where the data is  
 
-> Open terminal by pressing command + spacebar  
-> Start typing: Terminal  
+> Open terminal by typing Command Prompt in the start menu search bar  
 
-<img width="795" alt="Screenshot 2022-08-11 at 10 42 17" src="https://user-images.githubusercontent.com/22872947/184106904-70eb323f-b6af-4546-b03a-74c0066711af.png">
-
-> pwd = print working directory. Shows where on the computer path you are located  
-
-> ls = list contents of current directory. Here we are in Downloads and there is one folder "fw_example"  
+![image](https://user-images.githubusercontent.com/22872947/184115604-36c97886-62ad-4459-9ee7-a4e7f7e3d78f.png)
 
 > fw login bmgf.flywheel.io.xxxxxxx = Flywheel login command we have set up. This contains the users unique key at the end which should not be shared. When this is run succesfully it will return a line saying you are logged in.   
 
