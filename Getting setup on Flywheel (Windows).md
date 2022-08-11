@@ -69,6 +69,7 @@ https://drive.google.com/file/d/1sgyrTc3dsKm4cGlo-WDDhVz7EbaTxE2g/view?usp=shari
 
 <img width="1356" alt="image" src="https://user-images.githubusercontent.com/22872947/184101565-8feb13fe-0990-4fe8-b357-89f219e03630.png">
 
+![image](https://user-images.githubusercontent.com/22872947/184113361-59994499-c12b-4275-a2bc-183aac2dab18.png)
 
 ### On the command line
 First you need to open terminal and navigate to where the data is stored, then;  
