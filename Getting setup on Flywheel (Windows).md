@@ -87,38 +87,6 @@ After this command is run some output will be generated in the terminal. A revie
 The data will be uploaded to the Flywheel platform under the project and group specified(here group = dev, project = example). Opening up the Flywheel web browser we can see the subject and scans that have been uploaded. The subject label and time stamp are given on the left hand side and the list of scans are given on the right. In this example the dicom files from the scanner have automatically been converted to NIFTI the analysing file format. Going forward additional functionality will be added to curate and analyse the data on this platform as new data is added. 
 <img width="1635" alt="image" src="https://user-images.githubusercontent.com/22872947/184101337-3c501dda-9798-46ed-9c3b-be299c3f29ec.png">
 
-
-### Example shell script to send data to Flywheel
-The following is an example of a shell script (send2Flywheel.sh) that will copy data from a project folder on a local machine to flywheel. It will check of data already sent so acts as a good rolling backup. In a text editor add the following lines and save as a shell script if on Mac/Linux. Recomended editor is Visual Studio Code
-https://code.visualstudio.com/
-
-If on Windows this same information can be copied and saved in a text file and simply copied and pasted into the command terminal when you want to run. Advanced users can alternativly setup an executable file.   
-
-> \# Flywheel login (add path to profile)  
-> fw login [url].flywheel.io:[PERSONAL_API_KEY(DO NOT SHARE)]  
-> \# Set path to data  
-> sourceDir=~/scratch/DOLPHIN/  
-> fw ingest dicom --detect-duplicates ${sourceDir} global_map "UCT (DOLPHIN)"   
-
-- fw = flywheel CLI command
-- ingest = command to collect data
-- --detect-duplicates will search the flywheel platform for data already ingested
-- ${sourceDir} = directory on local machine containing data to send to flywheel
-- global_map = name of group where the projects (sites) are stored
-- "UCT (DOLPHIN)" = name of specific project data is associated with
-
-If setup as a shell script like above, remember the fw command needs to be set in $PATH otherwise the fullpath will need to be specified. for Mac/Linux
-> sudo cp fw /usr/local/bin/
-
-The shell script will neee permissions to be run(executed):
-> chmod +wrx ~/nan/repos/Flywheel/send2Flywheel.sh 
-
-- chmod = change permissions command
-- +rwx = flages to add read, write, execute
-
-Now all that is required to update data being sent to Flywheel is to run the script from the command line:
-> ./send2Flywheel.sh
-
 <p>&nbsp;</p>
 
 The first 20min of the Flywheel webinar provides more information (can be played at X1.25 speed)  
