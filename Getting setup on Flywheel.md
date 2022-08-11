@@ -88,7 +88,10 @@ The data will be uploaded to the Flywheel platform under the project and group s
 
 
 ### Example shell script to send data to Flywheel
-The following is an example of a shell script (send2Flywheel.sh) that will copy data from a project folder on a local machine to flywheel. It will check of data already sent so acts as a good rolling backup.
+The following is an example of a shell script (send2Flywheel.sh) that will copy data from a project folder on a local machine to flywheel. It will check of data already sent so acts as a good rolling backup. In a text editor add the following lines and save as a shell script if on Mac/Linux. Recomended editor is Visual Studio Code
+https://code.visualstudio.com/
+
+If on Windows this same information can be copied and saved in a text file and simply copied and pasted into the command terminal when you want to run. Advanced users can alternativly setup an executable file.   
 
 > \# Flywheel login (add path to profile)  
 > fw login [url].flywheel.io:[PERSONAL_API_KEY(DO NOT SHARE)]  
