@@ -28,16 +28,16 @@ https://docs.flywheel.io/hc/en-us/articles/360008162214-Installing-the-Flywheel-
 *Step 1:  Download*  
 In the upper-right corner, select your account menu, and select Profile. Here there will be the option to download the CLI for your system. 
 <img width="1614" alt="Screenshot 2022-08-09 at 17 29 24" src="https://user-images.githubusercontent.com/22872947/183707028-cc3e8d46-39ff-436f-a096-a4f32448e1a5.png">
-If on a Mac Flywheel will need to be added as a security exception in system preferences before you can open. *If on a mac pro (M1 max chip) it may be necessary to start in safemode and allow user managment of system terminal extensions under security options.   
+If on a Mac Flywheel will need to be added as a security exception in system preferences before you can open. *If on a mac pro (M1 max chip) it may be necessary to start in safemode and allow user managment of system terminal extensions under security options.* 
 
 *Step 2: Generate an API key*  
 Also under Flywheel Profile tab (Do not share)    
 
 *Step 3: Navigate to the fw.exe or fw app*  
-Move to somewhere it can be run from. Ideally on your system path.  
+Move to somewhere it can be run from. Ideally on your system path. See Flywheel documentation in link above for more information.
 
+From terminal on Mac (open by pressing command + space and start typing Terminal)
 > sudo cp ~/Downloads/darwin_amd64/fw /usr/local/bin/
-
 
 *Step 4: Log in from the CLI*     
 Should be possible to login via the command line with the site adress and your API     
@@ -70,6 +70,9 @@ https://drive.google.com/file/d/1sgyrTc3dsKm4cGlo-WDDhVz7EbaTxE2g/view?usp=shari
 First you need to open terminal and navigate to where the data is stored, then;  
 Connect/login to the CLI (command line interface) and finally;    
 Run the import command pointing to the folder where the data is  
+
+> Open terminal by pressing command + spacebar  
+> Start typing: Terminal  
 
 <img width="795" alt="Screenshot 2022-08-11 at 10 42 17" src="https://user-images.githubusercontent.com/22872947/184106904-70eb323f-b6af-4546-b03a-74c0066711af.png">
 
