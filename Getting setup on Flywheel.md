@@ -73,13 +73,13 @@ Run the import command pointing to the folder where the data is
 
 <img width="795" alt="Screenshot 2022-08-11 at 10 42 17" src="https://user-images.githubusercontent.com/22872947/184106904-70eb323f-b6af-4546-b03a-74c0066711af.png">
 
-pwd = print working directory. Shows where on the computer path you are located  
+> pwd = print working directory. Shows where on the computer path you are located  
 
-ls = list contents of current directory. Here we are in Downloads and there is one folder "fw_example"  
+> ls = list contents of current directory. Here we are in Downloads and there is one folder "fw_example"  
 
-fw login bmgf.flywheel.io.xxxxxxx = Flywheel login command we have set up. This contains the users unique key at the end which should not be shared. When this is run succesfully it will return a line saying you are logged in.   
+> fw login bmgf.flywheel.io.xxxxxxx = Flywheel login command we have set up. This contains the users unique key at the end which should not be shared. When this is run succesfully it will return a line saying you are logged in.   
 
-fw ingest dicom --detect-duplicates fw_example dev "example" = This line sends the data inside the folder fw_example to the project example in the group dev on the Flywheel platform. For sending real data dev needs to be replaced by *global_map* and "example" needs to be replaced by *your project name*  
+> fw ingest dicom --detect-duplicates fw_example dev "example" = This line sends the data inside the folder fw_example to the project example in the group dev on the Flywheel platform. For sending real data dev needs to be replaced by *global_map* and "example" needs to be replaced by *your project name*  
 
 After this command is run some output will be generated in the terminal. A review of the expected folder structure will be provided with the number of subjects and sessions. Have a look at this to check if it is what is expected. If so respond by typing "yes" to the prompt. The data will start uploading to the Flywheel platform.  
 
