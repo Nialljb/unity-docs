@@ -1,4 +1,4 @@
-# UNITY data labeling best practice
+# UNITY data labelling best practice
 V1.0 July 2022   
 
 ---
@@ -6,10 +6,14 @@ V1.0 July 2022
     
 An important motivation of the consortium is to standardise and automate analysis. To this end some standard conventions should be used. When collecting and organising data if a standardised structure is implemented, the following analysis steps can run efficiently. Through FlyWheel we will arrange data in the BIDS (Brain Imaging Data Structure) format https://bids.neuroimaging.io/  
 
-Organisation of data into the BIDS format will be implemented through FlyWheel. However there are steps that can be taken when labeling participants on the scanner that will make adding each new site less work.
-To make this a smooth process some **best practice** guidelines will be provided. *The automation of data processing is largely dependent on consistency and standardisation of user input.* Each project may have their own specific requirements, which can be adapted to.
+Organisation of data into the BIDS format will be implemented through FlyWheel. However, there are steps that can be taken when labelling participants on the scanner that will make adding each new site less work.
+To make this a smooth process some **best practice** guidelines will be provided. *The automation of data processing is largely dependent on consistency and standardisation of user input.* Each project may have their own specific requirements, which can be adapted to. Where possible it is preferred to stick as closely to the REPROIN convention at the scanner.   
 
-    The key is to be consistant
+https://dbic-handbook.readthedocs.io/en/latest/mri/reproin.html  
+
+However, this may not be possible, as we cannot currently changes Hyperfine acquisition labels but we do have control over the participant naming. 
+
+    The key is to be consistent
 
 - scan aquisition names = defined by Hyperfine
 - scan session labels = user input 
@@ -59,7 +63,6 @@ For example:
 > BETA001_visit01
 
 Other information should be stored in a demographic database with with a subject identifier that matches **exactly** the label that was entered onto the scanner. Typos, case-sensitivity, inconsistant dashes and underscores can cause problems.
-
 
 **Important:** There are special characters that can make it difficult to handle data such as () or ^ along with blank/white spaces. Here is a list of invalid characters that will result in blocked uploads to Flywheel if they are included in a filename:
 > \~  
