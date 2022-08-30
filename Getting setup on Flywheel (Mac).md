@@ -90,40 +90,40 @@ The data will be uploaded to the Flywheel platform under the project and group s
 
 <img width="1634" alt="image" src="https://user-images.githubusercontent.com/22872947/184119528-a0c15bb0-790c-4551-baed-fa9e54adf66f.png">
 
-
-### Example shell script to send data to Flywheel
-The following is an example of a shell script (send2Flywheel.sh) that will copy data from a project folder on a local machine to flywheel. It will check of data already sent so acts as a good rolling backup. In a text editor add the following lines and save as a shell script if on Mac/Linux. Recomended editor is Visual Studio Code
-https://code.visualstudio.com/
-
-If on Windows this same information can be copied and saved in a text file and simply copied and pasted into the command terminal when you want to run. Advanced users can alternativly setup an executable file.   
-
-> \# Flywheel login (add path to profile)  
-> fw login [url].flywheel.io:[PERSONAL_API_KEY(DO NOT SHARE)]  
-> \# Set path to data  
-> sourceDir=~/scratch/DOLPHIN/  
-> fw ingest dicom --detect-duplicates ${sourceDir} global_map "UCT (DOLPHIN)"   
-
-- fw = flywheel CLI command
-- ingest = command to collect data
-- --detect-duplicates will search the flywheel platform for data already ingested
-- ${sourceDir} = directory on local machine containing data to send to flywheel
-- global_map = name of group where the projects (sites) are stored
-- "UCT (DOLPHIN)" = name of specific project data is associated with
-
-If setup as a shell script like above, remember the fw command needs to be set in $PATH otherwise the fullpath will need to be specified. for Mac/Linux
-> sudo cp fw /usr/local/bin/
-
-The shell script will neee permissions to be run(executed):
-> chmod +wrx ~/nan/repos/Flywheel/send2Flywheel.sh 
-
-- chmod = change permissions command
-- +rwx = flages to add read, write, execute
-
-Now all that is required to update data being sent to Flywheel is to run the script from the command line:
-> ./send2Flywheel.sh
-
 <p>&nbsp;</p>
 
-The first 20min of the Flywheel webinar provides more information (can be played at X1.25 speed)  
+The first 20min of the Flywheel webinar provides more information 
 https://www.youtube.com/watch?v=ASf8mDOrFXw&ab_channel=Flywheel.io
+
+## Mac troubleshooting Flywheel setup
+
+### Mac silicon chip security settings
+On the latest Macs with silicon chips it may be necessary to change the startup disk security settings to allow use of kernal extensions. To do so follow the instructions below. During the process an adminstrators details may be required. 
+
+1. Shut down the computer
+2. Press and hold the power button. Keep holding and a message should appear "Loading startup options"
+3. Select "Options"   
+![IMG_3373](https://user-images.githubusercontent.com/22872947/187472357-a6da995b-9745-4b76-ab18-0d62fbb59026.JPG)
+
+4. When the menu appears, ignore this. Select the Utilities > Startup Security Utility from the toolbar menu on the top left of the screen  
+![IMG_3375](https://user-images.githubusercontent.com/22872947/187472496-a976ca0d-8da4-438a-8d2b-b0aa6dc33c2c.JPG)
+
+5. Select the startup disk  
+![IMG_3376](https://user-images.githubusercontent.com/22872947/187472595-abd4b201-7863-4af3-bd8b-70fab1a9cae9.JPG)
+
+6. Select "Reduced Security" & "Allow user management of kernal extensions from identified developers" 
+![IMG_3377](https://user-images.githubusercontent.com/22872947/187472793-3f0662db-e434-44fb-895e-879c695e0543.JPG)
+
+7. Click "OK"
+8. When the changes are applied restart the computer and continue with installation. 
+
+
+In some instances it may be necessary to install Rosetta on Macs with the new silicon chip if it is not already available. This simply improves compatability with software designed with intel chips. 
+
+1. Open Terminal (Command + space), type Terminal
+2. copy and paste the following:
+    > softwareupdate --install-rosetta
+
+For more information:
+https://support.apple.com/en-us/HT211861
 
