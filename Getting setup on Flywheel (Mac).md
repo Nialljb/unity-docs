@@ -14,6 +14,9 @@ https://docs.flywheel.io/hc/en-us
 
 When logged into our dedicated site. There will be a list of projects you may have access to in a certain capacity. If there is a project that you cannot see that you believe should be there contact a system admin to grant permissions to that project. 
 
+**Video walkthrough for getting setup with the command line interface (CLI)**
+https://www.youtube.com/watch?v=q2VqkeujTSU&ab_channel=NiallBourke
+
 
 ## Uploading data
 
@@ -91,6 +94,9 @@ The data will be uploaded to the Flywheel platform under the project and group s
 <img width="1634" alt="image" src="https://user-images.githubusercontent.com/22872947/184119528-a0c15bb0-790c-4551-baed-fa9e54adf66f.png">
 
 <p>&nbsp;</p>
+
+**Project sepecific data upload requirements**
+For specfic projects data may be organised or labeled in such a way we need to create a template to read the data and upload it. Once the CLI credentials have been setup we can make this template file and unique command to run in order to upload data. Please speak to me about this if required.  
 
 The first 20min of the Flywheel webinar provides more information 
 https://www.youtube.com/watch?v=ASf8mDOrFXw&ab_channel=Flywheel.io
