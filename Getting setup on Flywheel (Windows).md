@@ -96,5 +96,5 @@ The data will be uploaded to the Flywheel platform under the project and group s
 
 <p>&nbsp;</p>
 
-The first 20min of the Flywheel webinar provides more information (can be played at X1.25 speed)  
+The first 20min of the Flywheel webinar provides more information
 https://www.youtube.com/watch?v=ASf8mDOrFXw&ab_channel=Flywheel.io
