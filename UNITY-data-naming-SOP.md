@@ -26,13 +26,13 @@ To get an idea of best naming practice when collecting data on the scanner pleas
 > /project/subject/session/modality/acquisition/files
 
 For example:
-> /BETA/sub-BETA001/ses-visit001/anat/t1w/site-kcl_sub-BETA001_ses-visit001_aqc-t1w.nii.gz
+> /BETA/sub-BETA001/ses-visit001/anat/T1w/BETA001_ses-visit001_aqc-T1w.nii.gz
 
 **file structure:**
-> site-[abbreviation]_sub-[ID]_ses-[number]_aqc-[scan type]
+> sub-[ID]_ses-[number]_aqc-[scan type]
 
 An example of the final file would look like this:
-> site-kcl_sub-test001_ses-visit01_aqc-t1w.nii.gz
+> sub-test001_ses-visit01_aqc-T1w.nii.gz
  
 You can see here all characters are lowercase and each important bit of information is consistently prefixed with an identifier ( - ) and separated by and underscore ( _ ). It is ok to have CAPS in subject IDs but this should be consistent across all subjects for a project.
  With this structure applied to all data it becomes easy to __parse__ the relevant information relating to subject, scanning session, modality and to automate analysis pipelines. 
