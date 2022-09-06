@@ -14,8 +14,11 @@ https://docs.flywheel.io/hc/en-us
 
 When logged into our dedicated site. There will be a list of projects you may have access to in a certain capacity. If there is a project that you cannot see that you believe should be there contact a system admin to grant permissions to that project. 
 
-**Video walkthrough for getting setup with the command line interface (CLI)**
+**Video walkthrough for getting setup with the command line interface (CLI)**  
 https://www.youtube.com/watch?v=q2VqkeujTSU&ab_channel=NiallBourke
+
+**Video walkthrouhg for uploading data to Flywheel via the CLI**   
+https://www.youtube.com/watch?v=X7u_0cjG72U&ab_channel=NiallBourke 
 
 
 ## Uploading data
