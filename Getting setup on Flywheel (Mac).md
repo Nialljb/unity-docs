@@ -101,7 +101,7 @@ The data will be uploaded to the Flywheel platform under the project and group s
 **Project sepecific data upload requirements**
 For specfic projects data may be organised or labeled in such a way we need to create a template to read the data and upload it. Once the CLI credentials have been setup we can make this template file and unique command to run in order to upload data. Please speak to me about this if required.  
 
-The first 20min of the Flywheel webinar provides more information 
+The first 20min of the Flywheel webinar provides more information   
 https://www.youtube.com/watch?v=ASf8mDOrFXw&ab_channel=Flywheel.io
 
 ## Mac troubleshooting Flywheel setup
