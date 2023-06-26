@@ -18,7 +18,7 @@ When logged into our dedicated site. There will be a list of projects you may ha
 https://youtu.be/NcM6oTUz8O8
 
 **Video walkthrouhg for uploading data to Flywheel via the CLI**   
-https://www.youtube.com/watch?v=X7u_0cjG72U&ab_channel=NiallBourke 
+https://youtu.be/X7u_0cjG72U 
 
 
 ## Uploading data
@@ -66,7 +66,7 @@ not:
 - ECHO(01) 
 
 Example data can be downloaded from here:
-https://drive.google.com/drive/folders/13trxqRo2PNEk-JuwUKH2kEL9pSWwo8w-?usp=sharing
+https://drive.google.com/drive/folders/1oCORwsZVAM6RegtRAkD5wGBa1DjyXlfR?usp=drive_link
 
 
 <img width="1356" alt="image" src="https://user-images.githubusercontent.com/22872947/184101565-8feb13fe-0990-4fe8-b357-89f219e03630.png">
