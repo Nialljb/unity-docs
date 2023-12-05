@@ -31,23 +31,25 @@ Usage:
 
 """
 
+# --- Set up the Flywheel CLI and SDK ---
+
 # Flywheel API Key
-api_key = os.environ.get('FW_CLI_API_KEY')
+api_key = os.environ.get('FW_CLI_API_KEY') # Set your API key as an environment variable
 fw = flywheel.Client(api_key=api_key)
 
-group_name = "consortium"
-project_name = "BETA"
+group_name = "global_map" # Default for all UNITY projects
+project_name = "UCT-Khula-Hyperfine" # Change this to the project you want to run the gear on
 project = fw.lookup(f"{group_name}/{project_name}")
 ciso_gear =  fw.lookup('gears/ciso')
 
 # Initialize gear_job_list
 job_list = list()
-inputs = {}
+inputs = {} 
 
 # Initialize a dictionary for easy csv export
 report = {'subject':[]}
 
-# Create a work directory in our local "home" directory
+# Create a working directory in our local "home" directory
 work_dir = Path(Path.home()/'GD/work/Kings/analysis/fw-derivatives/', platform='auto')
 # If it doesn't exist, create it
 if not work_dir.exists():
@@ -56,6 +58,9 @@ if not work_dir.exists():
 project_path = pv.sanitize_filepath(work_dir/project.label, platform='auto')
 if not project_path.exists():
     project_path.mkdir()
+
+
+# --- Iterate through all subjects in the project and find the T2 acquisitions ---
 
 # Iterate through all subjects in the project and find the T2 acquisitions
 for subject in project.subjects.iter():
@@ -119,18 +124,27 @@ for subject in project.subjects.iter():
                         target_template = 'BCP-06M-T2.nii' 
                     elif age < 400:
                         target_template = 'BCP-12M-T2.nii'
+                    elif age < 600:
+                        target_template = 'BCP-18M-T2.nii'
+                    elif age < 900:
+                        target_template = 'BCP-24M-T2.nii'
+                    elif age < 1320:
+                        target_template = 'nihpd_asym_33-44_t2w.nii'
+                    elif age < 2000:
+                        target_template = 'nihpd_asym_44-60_t2w.nii'
                     else:
-                        print("age is too old - out of expected range")
+                        target_template = 'MNI152_T1_1mm.nii'
+                        print("Older than 2000 days (5.5 years), using MNI152_T1_1mm.nii")
 
-                    # Sanity check that age and target template match
                     print("target_template: ", target_template)
 
-        # # Submit the job
+# --- Submit the job ---
+
         try:
             # The destination for this anlysis will be on the session
             dest = session
             time_fmt = '%d-%m-%Y_%H-%M-%S'
-            analysis_label = f'ciso{datetime.now().strftime(time_fmt)}'
+            analysis_label = f'ciso{datetime.now().strftime(time_fmt)}' 
             job_id = ciso_gear.run(analysis_label=analysis_label, inputs=inputs, destination=dest, tags=['sdk'], config={
             "target_template": target_template,
             "verbose": "v"
@@ -140,6 +154,7 @@ for subject in project.subjects.iter():
         except:
             print("BOOP: Job cannot be sent.. No files for session??", dest.label)
 
+# --- Save the report to a csv file ---
 
 # Now save the report to a csv file using pandas, the easiest way to save this kind of data
 # In the format that we want.
